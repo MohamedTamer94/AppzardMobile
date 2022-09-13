@@ -14,7 +14,7 @@ if [ "$1" = "gcloud" ]; then
 	bash google-cloud-sdk/bin/gcloud install app-engine-java -y -q
 elif [ "$1" = "appzardFiles" ]; then
 	echo "Downloading appzard Build Files"
-	curl https://www.googleapis.com/drive/v3/files/1wobXDJaz9M2tYW87wd-SMe0O91xY72u-?alt=media&key=AIzaSyCuQUoy9CWSIx5LbLg3zCahsDgSMyV099w > build.zip
+	curl "https://www.googleapis.com/drive/v3/files/1wobXDJaz9M2tYW87wd-SMe0O91xY72u-?alt=media&key=AIzaSyCuQUoy9CWSIx5LbLg3zCahsDgSMyV099w" > build.zip
 	unzip -q build.zip
 	echo "Done!"
 	bash google-cloud-sdk/bin/java_dev_appserver.sh
