@@ -22,5 +22,4 @@ elif [ "$1" = "appzardFiles" ]; then
 	unzip -q -o build.zip
 	echo "Done!"
 	fi
-	bash google-cloud-sdk/bin/java_dev_appserver.sh
 fi
