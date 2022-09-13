@@ -10,6 +10,7 @@ if [ "$1" = "gcloud" ]; then
 	echo "Installing gcloud"
 	curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-401.0.0-linux-x86_64.tar.gz
 	tar -xf google-cloud-cli-401.0.0-linux-x86.tar.gz
+	rm -f google-cloud-cli-401.0.0-linux-x86.tar
 	bash google-cloud-sdk/install.sh -q
 elif [ "$1" = "appzardFiles" ]; then
 	echo "Installing appengine components"
