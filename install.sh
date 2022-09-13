@@ -2,8 +2,8 @@
 set -e
 echo "Installing Appzard.."
 echo "Installing gcloud"
-apt -y upgrade
-apt install -y python openssl
+apt -y --force-yes -o Dpkg::Options::="--force-confold" upgrade
+apt install -y --force-yes -o Dpkg::Options::="--force-confold" python openssl
 curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-401.0.0-linux-x86_64.tar.gz
 tar -xf google-cloud-cli-401.0.0-linux-x86.tar.gz
 ./google-cloud-sdk/install.sh --help
