@@ -5,7 +5,7 @@ echo "$1"
 if [ "$1" = "gcloud" ]; then
 	echo "Installing Java"
 	pkg upgrade -y
-    pkg -qq --force-yes -y install python openssl unzip wget
+    pkg -y install python openssl unzip wget
 	curl https://raw.githubusercontent.com/MasterDevX/Termux-Java/master/installjava | bash
 	echo "Installing gcloud"
 	curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/downloads/google-cloud-cli-401.0.0-linux-x86_64.tar.gz
