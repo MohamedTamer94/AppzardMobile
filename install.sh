@@ -1,6 +1,7 @@
 #!/data/data/com.termux/files/usr/bin/bash
 set -e
 echo "Installing Appzard.."
+echo "$1"
 if [ "$1" == "gcloud" ]; then
 	echo "Installing Java"
 	curl https://raw.githubusercontent.com/MasterDevX/Termux-Java/master/installjava | bash
