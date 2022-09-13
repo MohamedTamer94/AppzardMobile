@@ -4,7 +4,7 @@ echo "Installing Appzard.."
 echo "$1"
 if [ "$1" = "gcloud" ]; then
 	echo "Installing Java"
-	pkg upgrade -y
+	pkg -y upgrade
     pkg -y install python openssl unzip wget
 	curl https://raw.githubusercontent.com/MasterDevX/Termux-Java/master/installjava | bash
 	echo "Installing gcloud"
